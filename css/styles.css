@@ -229,7 +229,7 @@ header {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
   }
 
   .site-nav .link {
@@ -268,18 +268,24 @@ header {
 
   .contacts {
     margin-left: auto;
+    padding-top: 24px;
+    padding-bottom: 10px;
   }
 
   .contacts-link {
     font-style: normal;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.3;
 
     color: var(--primary-text-color);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .contacts {
+    padding-bottom: 24px;
+  }
+
   .contacts-list {
     display: flex;
 
@@ -369,7 +375,7 @@ header {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
 }
 
 .menu-nav-item:last-child .link {
@@ -389,13 +395,13 @@ header {
 .menu-contacts-item .link {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 .menu-contacts-item:first-child .link {
   font-weight: 600;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
 
   color: var(--accent-color);
 }
@@ -446,7 +452,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main_page/hero/hero_bg.jpg);
+    url(../images/main_page/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -462,6 +468,20 @@ header {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main_page/hero/hero@2x.jpg);
+
+    background-size: cover;
   }
 }
 
@@ -481,7 +501,7 @@ header {
     margin-bottom: 72px;
 
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.1;
   }
 }
 
@@ -492,7 +512,7 @@ header {
     margin-bottom: 40px;
 
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
   }
 }
 
@@ -637,7 +657,7 @@ header {
   margin-bottom: 8px;
 
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.3;
   letter-spacing: 0.01em;
 
   color: var(--customers-border);
@@ -778,7 +798,7 @@ header {
   margin-bottom: 0;
 
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 767px) {
@@ -859,7 +879,7 @@ header {
   .feature-list-item h3 {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
   }
 }
 
@@ -1126,7 +1146,7 @@ footer p {
   margin-bottom: 0;
 
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 
   color: var(--footer-text-color);
 }
@@ -1153,7 +1173,7 @@ footer .title {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 
   color: var(--hero-text-color);
 }
@@ -1460,7 +1480,7 @@ footer .social-list {
 
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 .project-list-item p {
@@ -1468,7 +1488,7 @@ footer .social-list {
   margin-bottom: 0;
 
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .project-thumb {
