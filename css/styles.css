@@ -282,11 +282,17 @@ header {
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
+
     margin-left: -40px;
   }
 
   .contacts-list-item {
     margin-left: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
