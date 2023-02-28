@@ -543,7 +543,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .hero-title {
-    width: 318px;
+    max-width: 318px;
 
     margin-bottom: 72px;
 
@@ -965,7 +965,7 @@ header {
 }
 
 .team-card {
-  width: 232px;
+  max-width: 232px;
 
   margin-right: 16px;
   margin-left: 16px;
